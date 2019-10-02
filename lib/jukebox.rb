@@ -27,7 +27,7 @@ def play(songs)
       puts "Playing #{user_input}"
     elsif (1..9).to_a.include?(user_input.to_i)
       binding.pry
-      puts "Playing #{song_name[user_input.to_i - 1]}"
+      puts "Playing #{songs[user_input.to_i - 1]}"
     else
       puts "Invalid input, please try again"
     end
