@@ -48,6 +48,7 @@ def run(songs)
   while input
   puts "Please enter a command:"
   input = gets.strip
+  case
   if user_input == "exit"
     exit_jukebox
   elsif user_input == "help"
