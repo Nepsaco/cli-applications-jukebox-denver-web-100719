@@ -48,15 +48,16 @@ def run(songs)
   while input
   puts "Please enter a command:"
   input = gets.strip
-  case
-    when "exit"
-    exit_jukebox
-    break
-  elsif user_input == "help"
-    help
-  elsif user_input == "list"
-    list(songs)   
-  elsif user_input == "play"
-    play(songs)
+    case
+      when "exit"
+        exit_jukebox
+        break
+      when "help"
+        help
+      when "list"
+        list(songs)   
+      when "play"
+        play(songs)
+    end
   end
 end
