@@ -28,8 +28,9 @@ def play(songs)
       puts "Playing #{user_input}"
     elsif user_input.to_i >= 1 && user_input.to_i <= 9  
       puts "Playing #{song_name[user_input.to_i - 1]}"
+    else
+      puts "Invalid input, please try again"
     end
-    puts "Invalid input, please try again"
 end
 
 def list(songs)
