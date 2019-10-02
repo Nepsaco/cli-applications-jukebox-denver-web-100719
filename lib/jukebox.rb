@@ -27,7 +27,7 @@ def play(songs)
   songs.each do |song_name|
     if user_input == song_name 
       puts "Playing #{song_name}"
-    elsif user_input >= 1 && user_input <= 9
+    elsif user_input == "1" 
       user_input -= 1
       puts "Playing #{song_name[user_input]}"
     end
