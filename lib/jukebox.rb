@@ -27,9 +27,8 @@ def play(songs)
   songs.each do |song_name|
     if user_input == song_name 
       puts "Playing #{song_name}"
-    elsif user_input.to_i ==  
-      user_input -= 1
-      puts "Playing #{song_name[user_input]}"
+    elsif user_input.to_i >= 1 && user_input.to_i <= 9  
+      puts "Playing #{song_name[user_input.to_i - 1]}"
     end
     puts "Invalid input, please try again"
   end
