@@ -30,7 +30,6 @@ def play(songs)
       puts "Playing #{song_name[user_input.to_i - 1]}"
     end
     puts "Invalid input, please try again"
-  end
 end
 
 def list(songs)
