@@ -25,7 +25,7 @@ def play(songs)
   user_input = gets.strip
       #binding.pry
   songs.each do |song_name|
-    if user_input == song_name 
+    if user_input song_name 
       puts "Playing #{song_name}"
     elsif user_input.to_i >= 1 && user_input.to_i <= 9  
       puts "Playing #{song_name[user_input.to_i - 1]}"
